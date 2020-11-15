@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin 2s;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "courier new";
+}
+
+.name {
+  font-size: 50px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.linksContainer {
+  height: 10%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.slide {
+  position: relative;
+  bottom: -50px;
+  animation-name: slide-up;
+  animation-delay: 0.15s;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.linkContainer {
+  border: 1px solid white;
+  height: 60px;
+  width: 33.33%;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+  font-size: 24x;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(218, 198, 198, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(105, 105, 105, 0.199);
+  padding: 1rem 1.5rem;
+  width: 42rem;
+  border-radius: 0.5rem;
+}
+
+.close-btn {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.accountsContainer {
+  margin-top: 300px;
+  display: flex;
+  margin-left: 80px;
+}
+
+.accountLogo {
+  flex-direction: row;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

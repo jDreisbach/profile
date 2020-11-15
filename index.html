@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Jon Dreisbach</title>
+</head>
+<body>
+    <div class="App">
+        <header class="App-header">
+
+         <!-- Page title/logo -->
+
+        <div class='App-logo'>
+          <p class="name">
+            Jon Dreisbach
+            </p>
+            <p class="title">Web Developer</p>
+        </div>
+
+        <!-- Navigation links -->
+      
+          <div class="container">
+            <div class="linksContainer">
+          <div class="linkContainer">
+            <a id='showProjects' href='#' class="App-link show">Projects</a>
+          </div>
+          <div class="linkContainer">
+            <a id='showResume' href='#' class="App-link show">Resume</a>
+          </div>
+          <div class="linkContainer">
+            <a id='showContact' href='#' class="App-link show">Contact</a>
+          </div>
+        </div> 
+
+        <!-- Projects Modal -->
+
+        <div id="projects" class="modal">
+            <div class="modal-box">
+                <span id="closeProjects" class="close-btn">X</span>
+                <h2 class="title">My Projects</h2>
+            </div>
+        </div>
+
+        <!-- Resume Modal -->
+
+        <div id="resume" class="modal">
+            <div class="modal-box">
+                <span id="closeResume" class="close-btn">X</span>
+                <h2 class="title">My Resume</h2>
+            </div>
+        </div>
+
+            <!-- Contact Modal -->
+
+            <div id="contact" class="modal">
+                <div class="modal-box">
+                    <span id="closeContact" class="close-btn">X</span>
+                    <h2 class="title">Contact Me</h2>
+                </div>
+            </div>
+
+        <!-- Account links -->
+        
+        <div class="accountsContainer">
+          <div class="accountLogo">
+            <a href="https://github.com/jDreisbach" target="_blank" >
+              <img alt="github" class=".image" src="./images/github.png" style="width:50px; height:50px;"/>
+            </a>
+          </div>
+            <div class="accountLogo">
+            <a href="https://stackoverflow.com/users/13698955/jon-dreisbach" target="_blank" >
+              <img alt="Stack Overflow" class=".image" src="./images/stack.png" style="width:50px; height:50px" />
+            </a>
+          </div>
+            <div class="accountLogo">
+            <a href="https://www.linkedin.com/in/jonathan-dreisbach-26674a88/" target="_blank" >
+              <img alt="linkedin" class=".image" src="./images/linkedin.png" style="width:50px; height:50px;"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    </div>
+</body>
+<script src='./js/projectsModal.js'></script>
+</html>
