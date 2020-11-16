@@ -1,9 +1,15 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
 
 .App-logo {
-  height: 40vmin;
+  max-height: 30vmax;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -14,12 +20,18 @@
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  background-image: url("../images/background.jpg");
+  min-height: 100%;
+  background-repeat: repeat;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 code {
@@ -32,28 +44,27 @@ code {
 
 .title {
   font-size: 30px;
+  color: white;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  max-height: 1vh;
+  min-width: 100%;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 30px;
 }
 
 .linksContainer {
   height: 10%;
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   top: 0;
   justify-content: center;
   text-align: center;
-  margin-left: 100px;
 }
 
 .slide {
@@ -75,10 +86,11 @@ code {
   }
 }
 .container {
+  margin: 500px;
+  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
 .linkContainer {
@@ -99,30 +111,32 @@ code {
 
 .App-link {
   color: #61dafb;
-  font-size: 24x;
+  font-size: 35px;
   text-decoration: none;
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(218, 198, 198, 0);
+  height: 30%;
+  background-color: rgba(14, 12, 12, 0);
   opacity: 0;
   visibility: hidden;
 }
 
 .modal-box {
-  position: absolute;
-  top: 35%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(105, 105, 105, 0.199);
+  background-color: rgb(37, 36, 36);
   padding: 1rem 1.5rem;
   width: 42rem;
   border-radius: 0.5rem;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -132,7 +146,8 @@ code {
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
-  background-color: lightgray;
+  color: white;
+  font-size: 20px;
 }
 
 .show-modal {
@@ -142,15 +157,30 @@ code {
 }
 
 .accountsContainer {
-  margin-top: 300px;
+  margin-top: 200px;
   display: flex;
-  margin-left: 80px;
 }
 
 .accountLogo {
   flex-direction: row;
   margin-right: 60px;
   margin-left: 60px;
+}
+
+.resume {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+.projectContainer {
+  align-items: center;
+}
+
+.projectImage {
+  height: 200px;
+  width: 350px;
 }
 
 @keyframes App-logo-spin {
