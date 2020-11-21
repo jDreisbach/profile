@@ -10,14 +10,13 @@
 .App-logo {
   max-height: 30vmax;
   width: 100%;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin 2s;
   }
-}
+} */
 
 body {
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
@@ -67,7 +66,7 @@ code {
   text-align: center;
 }
 
-.slide {
+/* .slide {
   position: relative;
   bottom: -50px;
   animation-name: slide-up;
@@ -75,16 +74,16 @@ code {
   animation-duration: 0.15s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-}
+} */
 
-@keyframes slide-up {
+/* @keyframes slide-up {
   0% {
     bottom: -50px;
   }
   100% {
     bottom: 0;
   }
-}
+} */
 .container {
   margin: 500px;
   position: absolute;
@@ -183,11 +182,11 @@ code {
   width: 350px;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
