@@ -7,7 +7,9 @@ let closeResume = document.querySelector("#closeResume");
 let closeContact = document.querySelector("#closeContact");
 let nav = document.querySelector(".linksContainer");
 let resume = document.querySelector("#resume");
-let contact = document.querySelector("#contact")
+let contact = document.querySelector("#contact");
+let projectCard= document.querySelector(".projectCard");
+let srcCode = document.querySelector(".App-link");
 
 const toggleProjects = () => {
     projects.classList.toggle("show-modal");
