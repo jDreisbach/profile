@@ -20,21 +20,13 @@
   width: 100%;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin 2s;
-  }
-} */
-
 body {
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
-  background-image: url("../images/background.jpg");
   min-height: 100%;
-  background-repeat: repeat;
   text-align: center;
   align-content: center;
   align-items: center;
@@ -75,24 +67,6 @@ code {
   text-align: center;
 }
 
-/* .slide {
-  position: relative;
-  bottom: -50px;
-  animation-name: slide-up;
-  animation-delay: 0.15s;
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-} */
-
-/* @keyframes slide-up {
-  0% {
-    bottom: -50px;
-  }
-  100% {
-    bottom: 0;
-  }
-} */
 .container {
   margin: 500px;
   position: absolute;
@@ -113,7 +87,7 @@ code {
   flex-direction: row;
 }
 
-.linkContainer :hover {
+.linkContainer:hover {
   margin-top: 1vh;
   transform-origin: center center 0px;
   transition: all 0.5s ease-out;
@@ -216,23 +190,117 @@ code {
   transition: all 0.5s ease-out;
   transform: perspective(1000px);
 }
-/* 
-@keyframes animate {
-  0% {
-    margin-top: 20vh;
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    margin-bottom: 0;
+    padding: 10px 10px;
   }
-  50% {
-    margin-top: 18vh;
+
+  .linksContainer {
+    height: 0;
+    width: 100%;
+    margin-left: 10px;
   }
-  100% {
-    margin-top: 20vh;
+
+  .container {
+    margin: 200px;
+    max-width: 100%;
   }
-} */
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+  .linkContainer {
+    border: 1px solid white;
+    height: 35px;
+    width: 40%;
+    flex-direction: column;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-link {
+    color: #61dafb;
+    font-size: 20px;
   }
-} */
+
+  .modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(48, 35, 35, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(37, 36, 36);
+    padding: 1vh 1.5vw;
+    width: 60vw;
+    border-radius: 0.5rem;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+  }
+
+  .close-btn {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 20px;
+  }
+
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .accountsContainer {
+    margin-top: 150px;
+    display: flex;
+  }
+
+  .accountLogo {
+    flex-direction: row;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .resume {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 30px;
+    margin-left: 60px;
+  }
+
+  .projectImage {
+    height: 80px;
+    width: 120px;
+  }
+
+  .projectCard {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.4);
+    background: #000;
+    z-index: 1;
+  }
+
+  .projectCard:hover {
+    margin-top: 1vh;
+    transform-origin: center center 0px;
+    transition: all 0.5s ease-out;
+    transform: perspective(1000px);
+  }
+}
